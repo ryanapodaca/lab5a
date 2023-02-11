@@ -77,22 +77,22 @@ IMPORTANT DETAIL: You may not use the arithmetic operator + in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumArray() function and see if the test passes.*/
 
 // // // Write your code here
-// let testArray = [2, 3, 4]; //eslint-disable-line
+let testArray = [2, 3, 4]; //eslint-disable-line
 
-// function sumArray(sumArr) { //eslint-disable-line
-//   let a = sumArr[0];
-//   let b = sumArr[1];
-//   let c = sumArr[2];
-//   let sumAB = sum(a,b)[0];
-//   let sum = sum(sumAB,c)[0];
-//   return [sum, `${a},${b},${c} was passed in as an array of numbers, and ${sum} is their sum.`];
-// }
+function sumArray(sumArr) { //eslint-disable-line
+  let a = sumArr[0];
+  let b = sumArr[1];
+  let c = sumArr[2];
+  let sumAB = sum(a,b)[0];
+  let fsum = sum(sumAB,c)[0];
+  return [fsum, `${a},${b},${c} was passed in as an array of numbers, and ${fsum} is their sum.`];
+}
 
 
 
 // // Here is the test for sumArray(); uncomment it to run it
 
-// testSumArray(testArray);
+testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
